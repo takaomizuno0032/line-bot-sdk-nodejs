@@ -35,6 +35,7 @@ const textEventHandler = async (event: webhook.Event): Promise<MessageAPIRespons
   }
 
   // Process all message related variables here.
+  console.log("evnet:", JSON.stringify(event));
   // Create a new message.
   // Reply to the user.
   await client.replyMessage({
